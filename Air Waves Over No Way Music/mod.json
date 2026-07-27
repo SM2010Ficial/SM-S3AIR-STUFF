@@ -1,0 +1,21 @@
+{
+	"Metadata":
+	{
+		"Name": "Air Waves Over No Way Music",
+		"UniqueID": "maik",
+		"Author": "SM2010" ,
+		"Description": "Replaces the continue version used on the NO WAY screen with AIR WAVES from DELTARUNE (CHAPTER 4)",
+		"URL": "",
+		"ModVersion": "1.2",
+		"GameVersion": "22.09.10.0"
+	},
+			"OtherMods":
+{
+			"notiniu":
+		{
+			"DisplayName": "Separated Continue & NO WAY! Music",
+			"IsRequired": "1",
+			"Priority": "Lower"
+		}
+}
+}
