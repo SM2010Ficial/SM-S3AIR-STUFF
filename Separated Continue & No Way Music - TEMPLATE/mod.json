@@ -1,0 +1,21 @@
+{
+	"Metadata":
+	{
+		"Name": "Separated Continue & NO WAY! Music - TEMPLATE",
+		"UniqueID": "notiniu-templeit",
+		"Author": "SM2010" ,
+		"Description": "It´s a template for do your own mods for the Separated Continue & NO WAY! Music mod",
+		"URL": "",
+		"ModVersion": "1.0",
+		"GameVersion": "22.09.10.0"
+	},
+			"OtherMods": //DO NOT EDIT THIS LAST PART, THIS IS FOR SPECIFY THAT THE MAIN VERSION OF THE MOD IS REQUIRED TO WORK AND IT MUST BE ON HIGHER PRIORITY
+{
+			"notiniu":
+		{
+			"DisplayName": "Separated Continue & NO WAY! Music",
+			"IsRequired": "1",
+			"Priority": "Lower"
+		}
+}
+}

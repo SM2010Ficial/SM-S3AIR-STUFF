@@ -1,0 +1,598 @@
+global bool fin //b7 ,ad!!, 63, 3D monitor roto //ad select
+global bool bolas
+global bool nopos
+global bool notanfin
+global bool jefi
+global bool minijefe
+global bool lanza //Originally, this was for LBZ
+global bool lanza2
+global bool sfera
+global bool bateri
+global bool bateri2
+global bool nowei
+global bool compe
+global bool geim
+global bool data
+global bool cont
+global bool templo
+global bool deser
+global bool grito
+global bool pinche
+global bool glu
+global bool check
+global bool sel
+global bool bum
+global bool laif
+global bool instas
+global bool jamp
+global bool fal
+global bool merio
+global bool merio2
+global bool seiga
+global bool supa
+global bool laun
+global bool laun2
+global bool emeral
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == 0xDC) && (fin == 0x01)
+            return "uwolE"
+	if (sfxId == 0xDC) && (fin == 0x02)
+           return "Nait"
+	if (sfxId == 0xDC) && (fin == 0x03)
+            return "Rompenait"
+	if (sfxId == 0xDC) && (fin == 0x04)
+			return "arcaend"
+	if (sfxId == 0xDC) && (fin == 0x05)
+            return "Year"
+	if (sfxId == 0xDC) && (fin == 0x06)
+            return "Forest"		
+	if (sfxId == 0xDC) && (fin == 0x07)
+            return "class"		
+//aqui van mas temas del final
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x1E) && (bolas == 0x01)
+            return "Forget"
+		if (sfxId == 0x1E) && (bolas == 0x02)
+            return "Quick"
+		if (sfxId == 0x1E) && (bolas == 0x03)
+            return "Lame"
+		if (sfxId == 0x1E) && (bolas == 0x04)
+            return "Noclip"
+//aqui van temas para la maquina de bolas
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x1D) && (nopos == 0x01)
+            return "Quick"
+		if (sfxId == 0x1D) && (nopos == 0x02)
+            return "Lame"
+		if (sfxId == 0x1D) && (nopos == 0x03)
+            return "IT"
+//aqui van temas para la tragaperras
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x26) && (notanfin == 0x01)
+            return "Mfin"
+		if (sfxId == 0x26) && (notanfin == 0x02)
+            return "Year"
+//aqui van temas para el final
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x19) && (jefi == 0x01)
+            return "Uzhos"
+//aqui van temas para el jefe
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x18 || sfxId == 0x2e) && (minijefe == 0x01)
+            return "Uzhos"
+//aqui van temas para el mini jefe
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x0B) && (lanza == 0x01)
+            return "arcaend"
+		if (sfxId == 0x0B) && (lanza == 0x02)
+            return "uizar"
+//aqui van temas para ICZ act 1
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x0C) && (lanza2 == 0x02)
+            return "arcaend"
+		if (sfxId == 0x0C) && (lanza2 == 0x03)
+            return "uizar"
+//aqui van temas para ICZ act 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+
+		if (sfxId == 0x0C) && (lanza2 == 0x01)
+		{
+           if (lanza == 0x01)
+		{
+            return "arcaend"
+		}
+		else if (lanza == 0x02)
+		{
+            return "uizar"
+		}
+		}
+//aqui va el codigo para la opcion de repetir tema del acto 1 para el acto 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x1C) && (sfera == 0x01)
+            return "No30"
+		if (sfxId == 0x1C) && (sfera == 0x02)
+            return "Noclip30"
+		if (sfxId == 0x1C) && (sfera == 0x03)
+            return "space30"
+//aqui van temas para el blue spheres
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x09) && (bateri == 0x01)
+            return "noclip"
+//aqui van temas para FBZ act 1
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x0A) && (bateri2 == 0x01)
+            return "noclip"
+//aqui van temas para FBZ act 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x28) && (global.game_mode == 0x2C)
+		{
+		if	(nowei == 0x01)
+			{
+				return "IT"
+			}
+		else if	(nowei == 0x02)
+			{
+			return "SMB"
+			}
+}
+//aqui van temas para el nowei
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+	if (bluespheres.minigame_mode)
+	{
+		if (sfxId == 0xf8 || sfxId == 0x1c)
+		{
+		if (sfera == 0x01)
+		{
+		return "No45"
+		}
+		else if (sfera == 0x02)
+		{
+		return "Noclip45"
+		}
+		else if (sfera == 0x03)
+		{
+		return "Space45"
+		}
+		}
+	}
+// aqui van temas para el blue spheres random
+return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}	
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x2D) && (compe == 0x01)
+            return "UwolC"
+//aqui van temas para el competition
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x27) && (geim == 0x01)
+            return "geim"
+//aqui van temas para el Game Over
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x2F) && (global.game_mode == 0x4C || global.game_mode == 0x0C)
+		{
+		if (data == 0x01)
+		{
+            return "class"
+		}
+}
+//aqui van temas para el Data Select
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+	if (sfxId == 0x28) && (global.game_mode == 0x14)
+		{
+		if (cont == 0x01)
+			{
+			return "UwolC"
+			}
+//aqui van temas para el continue
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x12)
+		{
+		if (templo == 0x01)
+		{
+        return "Neto"
+		}
+		if (templo == 0x02)
+		{
+        return "Mfin"
+		}
+//aqui van temas para SOZ act 2
+}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x11)
+		{
+		if (deser == 0x01)
+		{
+        return "arcaend"
+		}
+//aqui van temas para SOZ act 1
+}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x35)
+		{
+		if (grito == 0x01)
+		{
+        return "IDK1"
+		}
+		else if (grito == 0x02)
+		{
+        return "IDK2"
+		}
+		else if (grito == 0x03)
+		{
+        return "IDK3"
+		}
+		else if (grito == 0x04)
+		{
+        return "IDK4"
+		}
+		else if (grito == 0x05)
+		{
+        return "IDK15"
+		}
+//aqui van temas para morir
+}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x37)
+		{
+		if (pinche == 0x01)
+		{
+        return "IDK1"
+		}
+		else if (pinche == 0x02)
+		{
+        return "IDK2"
+		}
+		else if (pinche == 0x03)
+		{
+        return "IDK3"
+		}
+		else if (pinche == 0x04)
+		{
+        return "IDK4"
+		}
+		else if (pinche == 0x05)
+		{
+        return "IDK15"
+		}
+//aqui van temas al morir por pinchos
+}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x3B)
+		{
+		if (glu == 0x01)
+		{
+        return "IDK1"
+		}
+		else if (glu == 0x02)
+		{
+        return "IDK2"
+		}
+		else if (glu == 0x03)
+		{
+        return "IDK3"
+		}
+		else if (glu == 0x04)
+		{
+        return "IDK4"
+		}
+		else if (glu == 0x05)
+		{
+        return "IDK15"
+		}
+//aqui van temas al morir ahogado
+}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x63)
+		{
+		if (check == 0x01)
+			{
+        return "IDK5"
+			}
+//aqui van temas para checkpoint
+		}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0xad)
+		{
+		if (sel == 0x01)
+			{
+        return "IDK5"
+			}
+//aqui van temas al sleccionar??
+		}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x4E || sfxId == 0xB4 || sfxId ==0x3D)
+		{
+		if (bum == 0x01)
+		{
+        return "IDK7"
+		}
+		else if (bum == 0x02)
+		{
+        return "IDK8"
+		}
+		else if (bum == 0x03)
+		{
+        return "IDK9"
+		}
+		else if (bum == 0x04)
+		{
+        return "IDK1"
+		}
+		else if (bum == 0x05)
+		{
+        return "IDK3"
+		}
+		else if (bum == 0x06)
+		{
+        return "IDK10"
+		}
+		else if (bum == 0x07)
+		{
+        return "IDK12"
+		}
+//aqui van sonidos para las explosiones
+}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x2A) && (laif == 0x01)
+		{
+            return "IDK11" //T-T resulta que existia la funcion sound
+		}
+//aqui van temas para la vida extra //a6 posible insta
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x42) && (instas == 0x01)
+		{
+            return "IDK12"
+		}
+//aqui van temas para el instashield
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x62) && (jamp == 0x01)
+		{
+            return "IDK14"
+		}
+//aqui van temas al saltar
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x51) && (fal == 0x01)
+		{
+            return "IDK15"
+		}
+//aqui van temas al caer
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x0F) && (merio == 0x01)
+            return "Merio"
+		if (sfxId == 0x0F) && (merio == 0x02)
+			return "SMB"
+//aqui van temas para mushroom hill acto 1
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x10) && (merio2 == 0x02)
+            return "Merio"
+		if (sfxId == 0x10) && (merio2 == 0x03)
+			return "SMB"
+//aqui van temas para mushroom hill acto 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+
+		if (sfxId == 0x10) && (merio2 == 0x01)
+		{
+           if (merio == 0x01)
+		{
+            return "merio"
+		}
+		else if (merio == 0x02)
+		{
+            return "SMB"
+		}
+		}
+//aqui va el codigo para la opcion de repetir tema del acto 1 para el acto 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x0D) && (laun == 0x01)
+            return "arcaend"
+		if (sfxId == 0x0D) && (laun == 0x02)
+            return "uizar"
+		if (sfxId == 0x0D) && (laun == 0x03)
+            return "Noid"
+		if (sfxId == 0x0D) && (laun == 0x04)
+            return "Space"
+		if (sfxId == 0x0D) && (laun == 0x05)
+            return "Nonamed"	
+		if (sfxId == 0x0D) && (laun == 0x06)
+            return "Noclip"	
+		if (sfxId == 0x0D) && (laun == 0x07)
+            return "Nait"
+//aqui van temas para LBZ act 1
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x0E) && (laun2 == 0x02)
+            return "arcaend"
+		if (sfxId == 0x0E) && (laun2 == 0x03)
+            return "uizar"
+		if (sfxId == 0x0E) && (laun2 == 0x04)
+            return "Space"	
+		if (sfxId == 0x0E) && (laun2 == 0x05)
+            return "Nonamed"	
+		if (sfxId == 0x0E) && (laun2 == 0x06)
+            return "Noclip"	
+		if (sfxId == 0x0E) && (laun2 == 0x07)
+            return "Nait"	
+//aqui van temas para LBZ act 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+
+		if (sfxId == 0x0E) && (laun2 == 0x01)
+		{
+           if (laun == 0x01)
+		{
+            return "arcaend"
+		}
+		else if (laun == 0x02)
+		{
+            return "uizar"
+		}
+		else if (laun == 0x04)
+		{
+            return "Space"
+		}			
+		else if (laun == 0x06)
+		{
+            return "Nonamed"
+		}		
+		else if (laun == 0x07)
+		{
+            return "Noclip"	
+		}	
+		else if (laun == 0x08)
+		{
+            return "Nait"
+		}	
+		}
+//aqui va el codigo para la opcion de repetir tema del acto 1 para el acto 2
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x2B)
+		{
+		if (emeral == 0x01)
+		{
+            return "IDK11"
+		}
+		}
+//aqui van temas al recoger la esmeralda
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}

@@ -1,0 +1,43 @@
+global bool continiu
+global bool nowey
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x28) && (global.game_mode == 0x14)
+		{
+		if	(continiu == 0x01)
+			{
+				return "Continue"
+			}
+		else if (continiu == 0x00)
+			{
+				return "28"
+			}		
+		}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+}
+
+function u64 Standalone.getModdedSoundKey(u64 soundKey, u8 sfxId, u8 soundRegType)
+{
+		if (sfxId == 0x28) && (global.game_mode == 0x2C)
+		{
+		if	(nowey == 0x01)
+			{
+				return "Noway"
+			}
+		else if (nowey == 0x00)
+			{
+				return "28"
+			}	
+		}
+      return base.Standalone.getModdedSoundKey(soundKey, sfxId, soundRegType)
+} //mira, originalmente esto era como uno de varios easter eggs por ir al fondo de esto (y como una medida toda boba para evitar que algunos listillos se robaran el mod) pero pues me di cuenta que era tonto dejarlo cono eso asi que mejor borre el resto y solo deje la historia del mod en esta parte en fin... esto se suponia que era para una opcion para un mod a fechas de subir esta actualizacion ya esta lanzado (se llama BMB Audio Pack) (y si, incluso para mas comodidad, mantuve la cancion que inicio todo, esta siendo la del NO WAY!), el punto es que cuando importe la cancion, no sabia que esta se repetía tanto para el no way y el continue, haciendo que mientras probaba el mod (no pregunten porque me puse a probar el mod, de la pantalla del no way a la del continue), pues sonara la misma cancion, sabiendo que esta no estaba destinada a ser usada para el continue (elegi esa cancion para hacer algo como esa cancion de la seleccion de minijuegos en el cuarto de "mike" en deltarune) por ende tuve la ambicion de hacer una opcion para especificar la cancion del no way y del continue por separado, ahi luego de buscar y buscar logre llegar con un comentario de timer en donde este aclaraba que el noway usaba una wea especifica, luuuuuego decidi reutilizar el codigo que ya tenia de el mod que estaba desarollando y simplemente le añadi los 2 "&" y la funcion, cruze los dedos y....no funciono :P, pero pues no me rendi (por algo esto esta aqui), y luego de 3 HORAS... resulta que habia olvidado poner 1 "=" en "(global.game_mode ==...", y luego de darme cuenta de tal estupidez, volvi a cruzar los dedos....y esta vez si funciono, y pues ya el resto esta en este mod....la verdad ni yo se si se me entendio esta historia toda boba en fin uhh si algo disfruta de un arte acsii porque si
+
+//    /----\_
+//   |_______|
+//\\ | | | |
+// °\ \___/  
+//   \|  |\
+//    \__/ -
+//    |  |
+//   -    -

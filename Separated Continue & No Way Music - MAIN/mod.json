@@ -1,0 +1,43 @@
+{
+	"Metadata":
+	{
+		"Name": "Separated Continue & NO WAY! Music",
+		"Author": "SM2010" ,
+		"UniqueID": "notiniu",
+		"Description": "This only includes the code necessary for play the separated music for the NO WAY! screen and the Continue Screen",
+		"URL": "",
+		"ModVersion": "1.5",
+		"GameVersion": "22.09.10.0"
+	},
+			"Settings":
+		{
+			"Events":
+			[
+{
+					"InternalName": "continiu",
+					"DisplayName": "Continue Music",
+					"Variable": "continiu",
+					"DefaultValue": "0x00",
+					"Category": "Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON",
+				}
+						},
+{
+					"InternalName": "nowey",
+					"DisplayName": "No Way Screen Music",
+					"Variable": "nowey",
+					"DefaultValue": "0x00",
+					"Category": "Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON",
+				}
+						},
+			]
+		}
+},
+}

@@ -1,0 +1,466 @@
+{
+	"Metadata":
+	{
+		"Name": "Mario 3: Around The World Audio Pack",
+		"UniqueID": "Maround",
+		"Author": "SM2010",
+		"Description": "It Allows to customize certain tracks of S3AIR with tracks from Mario 3: Around The World (and kinda Mario 4: Space Odyssey cuz it uses almost the same songs).                                     CHECK THE OPTIONS SOUND TEST FOR LISTEN THE SONGS AND DECIDE WHICH ONE SELECT!, AND ALSO                                                               EVERYTHING IS OFF BY DEFAULT, CHECK THE OPTIONS SECTION!",
+		"URL": "",
+		"ModVersion": "1.1.1.0",
+		"GameVersion": "20.04.26.0"
+},
+			"Settings":
+		{
+			"Events":
+			[
+{
+					"InternalName": "lanza",
+					"DisplayName": "Act 1 Music",
+					"Variable": "lanza",
+					"DefaultValue": "0x00",
+					"Category": "Ice Cap Zone - ICZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Ending - Arkanoid",
+						"0x02": "Wizardry",
+				}
+					},
+{
+					"InternalName": "lanza2",
+					"DisplayName": "Act 2 Music",
+					"Variable": "lanza2",
+					"DefaultValue": "0x00",
+					"Category": "Ice Cap Zone - ICZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Same As Act 1",
+						"0x02": "Ending - Arkanoid",
+						"0x03": "Wizardry",
+}
+	},
+{
+					"InternalName": "laun",
+					"DisplayName": "Act 1 Music",
+					"Variable": "laun",
+					"DefaultValue": "0x00",
+					"Category": "Launch Base Zone - LBZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Ending - Arkanoid",
+						"0x02": "Wizardry",
+						"0x03": "Space Standart",
+						"0x04": "Nonamed",
+						"0x05": "Nonamed (6s Loop)",
+						"0x06": "Through The Night",
+				}
+	},
+{
+					"InternalName": "laun2",
+					"DisplayName": "Act 2 Music",
+					"Variable": "laun2",
+					"DefaultValue": "0x00",
+					"Category": "Launch Base Zone - LBZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Same As Act 1",
+						"0x02": "Ending - Arkanoid",
+						"0x03": "Wizardry",
+						"0x04": "Space Standart",
+						"0x05": "Nonamed",
+						"0x06": "Nonamed (6s Loop)",
+						"0x17": "Through The Night",
+}
+	},
+{
+					"InternalName": "merio",
+					"DisplayName": "Act 1 Music",
+					"Variable": "merio",
+					"DefaultValue": "0x00",
+					"Category": "Mushroom Hill Zone - MHZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "SMB (JOKE)",
+						"0x02": "SMB Tepples (JOKE)",
+				}
+						},
+{
+					"InternalName": "merio2",
+					"DisplayName": "Act 2 Music",
+					"Variable": "merio2",
+					"DefaultValue": "0x00",
+					"Category": "Mushroom Hill Zone - MHZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Same As Act 1",
+						"0x02": "SMB (JOKE)",
+						"0x03": "SMB Tepples (JOKE)",
+				}
+						},
+{
+					"InternalName": "bateri",
+					"DisplayName": "Act 1 Music",
+					"Variable": "bateri",
+					"DefaultValue": "0x00",
+					"Category": "Flying Battery Zone - FBZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Nonamed 6s Loop)",
+				}
+					},
+{
+					"InternalName": "bateri2",
+					"DisplayName": "Act 2 Music",
+					"Variable": "bateri2",
+					"DefaultValue": "0x00",
+					"Category": "Flying Battery Zone - FBZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "On (Nonamed 6s Loop)",
+				}
+					},
+{
+					"InternalName": "templo",
+					"DisplayName": "Act 2 Music",
+					"Variable": "templo",
+					"DefaultValue": "0x00",
+					"Category": "Sandopolis Zone - SOZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Ne4to Strrrrashnoe!!!",
+						"0x02": "Trampam (8s Loop)",
+				}
+						},
+{
+					"InternalName": "deser",
+					"DisplayName": "Act 1 Music",
+					"Variable": "deser",
+					"DefaultValue": "0x00",
+					"Category": "Sandopolis Zone - SOZ",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Ending - Arkanoid)",
+				}
+						},
+				{
+					"InternalName": "fin",
+					"DisplayName": "Credits Music",
+					"Variable": "fin",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Uwol (Ending)",
+						"0x02": "Through The Night",
+						"0x03": "Through The Night (OG)",
+						"0x04": "Ending (Arkanoid)",
+						"0x05": "See You Next Year",
+						"0x06": "Lost Forest",
+						"0x07": "Class11.Time Files",
+				}
+					},
+				{
+					"InternalName": "bolas",
+					"DisplayName": "Gumball Machine Music",
+					"Variable": "bolas",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Forget Him",
+						"0x02": "Quick Fix",
+						"0x03": "Lame Bells",
+						"0x04": "Nonamed (6s Loop)",
+				}
+					},
+				{
+					"InternalName": "nopos",
+					"DisplayName": "Slot Machine Music",
+					"Variable": "nopos",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Quick Fix",
+						"0x02": "Lame Bells",
+						"0x03": "Another It",
+				}
+					},
+				{
+					"InternalName": "notanfin",
+					"DisplayName": "Ending Music",
+					"Variable": "notanfin",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Trampam (8s Loop)",
+						"0x02": "See You Next Year",
+				}
+					},
+				{
+					"InternalName": "jefi",
+					"DisplayName": "Boss Music",
+					"Variable": "jefi",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Uzhos)",
+				}
+					},
+				{
+					"InternalName": "minijefe",
+					"DisplayName": "Miniboss Music",
+					"Variable": "minijefe",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Uzhos)",
+				}
+					},
+				{
+					"InternalName": "sfera",
+					"DisplayName": "Blue Spheres Music",
+					"Variable": "sfera",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Nonamed",
+						"0x02": "Nonamed (6s Loop)",
+						"0x03": "Space Standart",
+				}
+					},
+{
+					"InternalName": "nowei",
+					"DisplayName": "No Way!!! Music",
+					"Variable": "nowei",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "Another Him",
+						"0x02": "SMB Tepples",
+				}
+					},
+{
+					"InternalName": "compe",
+					"DisplayName": "Competition Menu Music",
+					"Variable": "compe",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Uwol - Menu)",
+				}
+						},
+{
+					"InternalName": "geim",
+					"DisplayName": "Game Over Music",
+					"Variable": "geim",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Game Over - Uwol)",
+				}
+						},
+{
+					"InternalName": "data",
+					"DisplayName": "Data Select Music",
+					"Variable": "data",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Class11.Time Files)",
+				}
+						},
+{
+					"InternalName": "cont",
+					"DisplayName": "Continue Music",
+					"Variable": "cont",
+					"DefaultValue": "0x00",
+					"Category": "Other Music",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (Menu - Uwol)",
+				}
+						},
+{
+					"InternalName": "grito",
+					"DisplayName": "Death Sound",
+					"Variable": "grito",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "1 (IDK1)",
+						"0x02": "2 (IDK2)",
+						"0x03": "3 (IDK4)",
+						"0x04": "4 (IDK5)",
+						"0x05": "5 (IDK10)",
+				}
+						},
+{
+					"InternalName": "pinche",
+					"DisplayName": "Spike Death Sound",
+					"Variable": "pinche",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "1 (IDK1)",
+						"0x02": "2 (IDK2)",
+						"0x03": "3 (IDK4)",
+						"0x04": "4 (IDK5)",
+						"0x05": "5 (IDK10)",
+				}
+						},
+{
+					"InternalName": "glu",
+					"DisplayName": "Drown Sound",
+					"Variable": "glu",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "1 (IDK1)",
+						"0x02": "2 (IDK2)",
+						"0x03": "3 (IDK4)",
+						"0x04": "4 (IDK5)",
+						"0x05": "5 (IDK10)",
+				}
+						},
+{
+					"InternalName": "check",
+					"DisplayName": "Checkpoint Sound",
+					"Variable": "check",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK6)",
+				}
+						},
+{
+					"InternalName": "sel",
+					"DisplayName": "Selection Sound",
+					"Variable": "sel",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK6)",
+				}
+						},
+{
+					"InternalName": "bum",
+					"DisplayName": "Explosion Sound",
+					"Variable": "bum",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "1 (IDK7)",
+						"0x02": "2 (IDK8)",
+						"0x03": "3 (IDK9)",
+						"0x04": "4 (IDK1)",
+						"0x05": "5 (IDK3)",
+						"0x06": "6 (IDK10)",
+						"0x07": "7 (IDK12)",
+				}
+						},
+{
+					"InternalName": "laif",
+					"DisplayName": "Extra Life Sound",
+					"Variable": "laif",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK11)",
+				}
+						},
+{
+					"InternalName": "instas",
+					"DisplayName": "Insta Shield Sound",
+					"Variable": "instas",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK12)",
+				}
+						},
+{
+					"InternalName": "jamp",
+					"DisplayName": "Jump Sound",
+					"Variable": "jamp",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK14)",
+				}
+						},
+{
+					"InternalName": "fal",
+					"DisplayName": "Fall Sound",
+					"Variable": "fal",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK15)",
+				}
+						},
+{
+					"InternalName": "emeral",
+					"DisplayName": "Emerald Sound",
+					"Variable": "emeral",
+					"DefaultValue": "0x00",
+					"Category": "SFX",
+					"Options":
+				{
+						"0x00": "OFF",
+						"0x01": "ON (IDK11)",
+				}
+						},
+			]
+		}
+},
+}
